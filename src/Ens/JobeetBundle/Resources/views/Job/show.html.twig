@@ -1,6 +1,10 @@
-{% extends '::base.html.twig' %}
+{% extends 'EnsJobeetBundle::layout.html.twig' %}
+{% block stylesheets %}
+  {{ parent() }}
+  <link rel="stylesheet" href="{{ asset('bundles/ensjobeet/css/jobs.css') }}" type="text/css" media="all" />
+{% endblock %}
 
-{% block body -%}
+{% block content %}
     <h1>Job</h1>
 
     <table class="record_properties">
